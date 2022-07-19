@@ -1,0 +1,127 @@
+/* Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+/* Global style */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+/* Header Style */
+.header-container {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  background-color: #161616;
+  border-radius: 30px;
+}
+.left-header {
+  padding-left: 5.3vw;
+  width: 40%;
+  color: #ffffff;
+}
+.left-header h1 {
+  font-size: 3.5vw;
+  font-weight: 700;
+}
+.left-header p {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.right-header {
+  width: 60%;
+  padding-right: 80px;
+}
+.right-header img {
+  width: 100%;
+}
+.btn {
+  background-color: #dd0000;
+  padding: 16px 25px;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.btn a {
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.btn i {
+  font-size: 24px;
+  font-weight: 400;
+}
+/* Blogs styles */
+.blogs-container {
+  margin-top: 6.5vw;
+  display: flex;
+  justify-content: space-around;
+}
+.side-section {
+  background-color: #161616;
+  border-radius: 10px;
+}
+.blog-btn {
+  margin: 30px;
+  width: 252px;
+  height: 252px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.side-btn {
+  width: 252px;
+  height: 64px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #161616;
+  background-color: #ffffff;
+  border: none;
+}
+.blog {
+  background-color: #dd0000;
+  color: #ffffff;
+}
+
+/* Responsive Mobile */
+@media screen and (max-width: 688px) {
+  .header-container {
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .left-header {
+    margin-top: 28px;
+    padding: 0;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .left-header p {
+    width: 100%;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .right-header {
+    margin-top: 30px;
+    padding: 0;
+  }
+}
