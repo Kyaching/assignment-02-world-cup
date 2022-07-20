@@ -95,6 +95,7 @@ a {
   background-color: #161616;
   border-radius: 10px;
 }
+/* Buttons */
 .blog-btn {
   margin-top: 30px;
   width: 100%;
@@ -108,14 +109,29 @@ a {
   width: 80%;
   height: 64px;
   border-radius: 5px;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: 1s;
+}
+.side-btn:hover {
+  transform: scale(1.1);
+}
+.side-btn a {
   font-size: 20px;
   font-weight: 500;
   color: #161616;
-  background-color: #ffffff;
-  border: none;
 }
 .blog {
   background-color: #dd0000;
+}
+.blog a {
+  color: #ffffff;
+}
+.match-btn {
+  background-color: #dd0000;
+}
+.match-btn a {
   color: #ffffff;
 }
 .grid-blogs {
@@ -166,6 +182,53 @@ a {
   font-size: 18px;
   color: #161616cc;
 }
+/* Upcoming Match section */
+.match-container {
+  width: 100%;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+}
+.match-img {
+  width: 80%;
+  margin: 53px auto 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.left {
+  display: flex;
+  width: 40%;
+}
+.left img {
+  width: 100%;
+  height: 100%;
+}
+.right {
+  display: flex;
+  width: 40%;
+}
+.right img {
+  width: 100%;
+  height: 100%;
+}
+.match-img span {
+  font-size: 16px;
+  font-weight: 700;
+  color: #161616;
+}
+#match-txt {
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+#match-txt p {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #4d4d4d;
+}
+
 /* View all button */
 .view-all {
   display: flex;
@@ -228,6 +291,11 @@ hr {
 .social-link a {
   color: #ffffff;
   padding-bottom: 30px;
+  transition: 1s;
+}
+.social-link a:hover {
+  /* transform: translateY(-10px); */
+  transform: scale(1.2);
 }
 
 /* Responsive Mobile */
