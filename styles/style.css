@@ -148,7 +148,7 @@ a {
 /* Footer styles */
 .footer-section {
   margin-top: 6.5vw;
-  height: 22.2vw;
+  height: 100%;
   background-color: #161616;
 }
 .footer-section h3 {
@@ -194,7 +194,7 @@ hr {
 }
 
 /* Responsive Mobile */
-@media screen and (max-width: 688px) {
+@media screen and (max-width: 576px) {
   .header-container {
     width: 90%;
     flex-direction: column;
@@ -226,6 +226,7 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #ffffff;
   }
   .blogs-container {
     flex-direction: column;
@@ -240,13 +241,11 @@ hr {
   }
   .side-btn {
     display: inline;
+    border: 1px solid #b9b9b9;
   }
   .grid-blogs {
     margin-top: 25px;
     grid-template-columns: repeat(1, 1fr);
-  }
-  .footer-section {
-    height: 100%;
   }
   .footer-section h3 {
     padding-top: 24px;
@@ -258,5 +257,81 @@ hr {
   }
   .social-link a {
     margin-bottom: 20px;
+  }
+}
+/* Media Query Tablet */
+@media (min-width: 577px) and (max-width: 768px) {
+  .left-header {
+    width: 50%;
+  }
+  .left-header p {
+    width: 90%;
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .right-header {
+    width: 50%;
+    padding-right: 2%;
+  }
+  .blogs-container {
+    width: 80vw;
+    margin: 70px auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .side-section {
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+  }
+  .blog-btn {
+    flex-direction: row;
+    width: 90%;
+    margin: 0 auto;
+    column-gap: 20px;
+  }
+  .side-btn {
+    border: 1px solid #e8e8e8;
+  }
+  .grid-blogs {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .blogs {
+    width: 100%;
+    height: 100%;
+  }
+  .blog-img img {
+    width: 100%;
+  }
+  .important-links {
+    width: 80%;
+  }
+  .important-links ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 40px;
+  }
+  .social-link {
+    padding-bottom: 20px;
+  }
+  /* Laptop and others */
+  @media (min-width: 769px) and (max-width: 992px) {
+    .header-container {
+      width: 80%;
+    }
+    .left-header {
+      width: 60%;
+    }
+    .right-header {
+      width: 40%;
+    }
+    .right-header img {
+      padding: 0;
+    }
   }
 }
