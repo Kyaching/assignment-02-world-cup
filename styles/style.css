@@ -32,6 +32,10 @@ a {
   align-items: center;
   background-color: #161616;
   border-radius: 30px;
+  transition: 2s;
+}
+.header-container:hover {
+  transform: scale(0.9);
 }
 .left-header {
   padding-left: 5.3vw;
@@ -284,7 +288,7 @@ hr {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .important-links {
-  width: 60%;
+  width: 70%;
   margin: 30px auto;
 }
 .important-links ul {
@@ -317,7 +321,7 @@ hr {
   transition: 1s;
 }
 .social-link a:hover {
-  transform: scale(1.2);
+  transform: translateY(-10px);
 }
 
 /*===============================
@@ -391,6 +395,10 @@ hr {
     justify-content: center;
     align-items: center;
   }
+  .important-links ul li a {
+    display: inline-block;
+    padding-top: 15px;
+  }
   .social-link a {
     margin-bottom: 20px;
   }
@@ -444,6 +452,10 @@ hr {
     flex-wrap: wrap;
     justify-content: center;
     column-gap: 40px;
+  }
+  .important-links ul li a {
+    display: inline-block;
+    margin-top: 10px;
   }
   .social-link {
     padding-bottom: 20px;
