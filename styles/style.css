@@ -1,7 +1,16 @@
-/* Google fonts */
+/*********************************
+*  Designed by Kyachinghla Marma *
+**********************************
+*/
+
+/*============= 
+Google fonts 
+==============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-/* Global style */
+/*==============
+  Global style 
+ ===============*/
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +21,9 @@ body {
 a {
   text-decoration: none;
 }
-/* Header Style */
+/*============== 
+  Header Style 
+================*/
 .header-container {
   margin: 50px auto;
   max-width: 90vw;
@@ -81,7 +92,9 @@ a {
   height: 24px;
   transition: transform 1s;
 }
-/* Blogs styles */
+/*============= 
+  Blogs styles 
+===============*/
 .blogs-container {
   width: 90vw;
   margin: 130px auto;
@@ -95,7 +108,9 @@ a {
   background-color: #161616;
   border-radius: 10px;
 }
-/* Buttons */
+/*============
+  Button style 
+==========*/
 .blog-btn {
   margin-top: 30px;
   width: 100%;
@@ -182,7 +197,9 @@ a {
   font-size: 18px;
   color: #161616cc;
 }
-/* Upcoming Match section */
+/*======================
+  Upcoming Match section 
+======================*/
 .match-container {
   width: 100%;
   border: 1px solid #e8e8e8;
@@ -229,7 +246,9 @@ a {
   color: #4d4d4d;
 }
 
-/* View all button */
+/*=============== 
+  View all button 
+==============*/
 .view-all {
   display: flex;
   justify-content: center;
@@ -244,7 +263,9 @@ a {
   border: none;
   text-align: center;
 }
-/* Footer styles */
+/*=============
+  Footer styles 
+ ============*/
 .footer-section {
   margin-top: 6.5vw;
   height: 100%;
@@ -278,7 +299,9 @@ hr {
   font-weight: 600;
   color: #b9b9b9;
 }
-/* Social Links */
+/*============
+  Social Links 
+ =============*/
 .social-link {
   color: #ffffff;
   display: flex;
@@ -294,11 +317,12 @@ hr {
   transition: 1s;
 }
 .social-link a:hover {
-  /* transform: translateY(-10px); */
   transform: scale(1.2);
 }
 
-/* Responsive Mobile */
+/*===============================
+  Media Query for  Mobile devices 
+===============================*/
 @media screen and (max-width: 767px) {
   .header-container {
     height: 100%;
@@ -323,6 +347,17 @@ hr {
     color: rgba(255, 255, 255, 0.8);
     font-size: 14px;
     font-weight: 400;
+    line-height: 1.5em;
+    height: 3em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+  }
+  .left-header p:hover {
+    overflow: visible;
+    white-space: normal;
+    height: auto;
   }
   .blogs-container {
     flex-direction: column;
@@ -360,7 +395,9 @@ hr {
     margin-bottom: 20px;
   }
 }
-/* Media Query Tablet */
+/*==============================
+  Media Query for Tablet devices
+ ===============================*/
 @media (min-width: 768px) and (max-width: 1023px) {
   .header-container {
     height: 60vh;
@@ -412,25 +449,3 @@ hr {
     padding-bottom: 20px;
   }
 }
-/* Large device
-@media screen and (min-width: 1024px) {
-  .header-container {
-    width: 90vw;
-    margin: 50px auto;
-  }
-  .blogs-container {
-    width: 100vw;
-  }
-  .side-section {
-    width: 30%;
-  }
-  .grid-blogs {
-    width: 65%;
-  }
-  .blogs {
-    width: 100%;
-  }
-  .blog-img img {
-    width: 100%;
-  }
-} */
