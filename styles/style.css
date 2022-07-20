@@ -141,10 +141,19 @@ a {
   font-weight: 500;
   color: #161616;
 }
+/* .side-btn a:visited {
+  color: blue;
+} */
 .blog {
   background-color: #dd0000;
 }
 .blog a {
+  color: #ffffff;
+}
+.group-btn {
+  background-color: #dd0000;
+}
+.group-btn a {
   color: #ffffff;
 }
 .match-btn {
@@ -153,6 +162,7 @@ a {
 .match-btn a {
   color: #ffffff;
 }
+/* Grid Blogs Style */
 .grid-blogs {
   width: 80%;
   display: grid;
@@ -164,6 +174,10 @@ a {
   width: 100%;
   border: 1px solid #ebebeb;
   border-radius: 10px;
+}
+.blogs:hover {
+  border: 1px solid #161616;
+  transform: scale(1.01);
 }
 .blog-img img {
   width: 100%;
@@ -209,6 +223,10 @@ a {
   border: 1px solid #e8e8e8;
   border-radius: 10px;
 }
+.match-container:hover {
+  border: 1px solid #161616;
+  transform: translateY(-5px);
+}
 .match-img {
   width: 80%;
   margin: 53px auto 20px auto;
@@ -249,7 +267,31 @@ a {
   font-weight: 400;
   color: #4d4d4d;
 }
-
+/* ========================
+  All Groups Section Style
+======================== */
+.group-section h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #161616;
+  text-align: center;
+  margin-bottom: -10px;
+}
+.all-group {
+  margin: 30px auto;
+}
+.blogs-line {
+  border: 1px solid #161616;
+}
+.match-group {
+  width: 90vw;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 /*=============== 
   View all button 
 ==============*/
@@ -266,6 +308,7 @@ a {
   color: #ffffff;
   border: none;
   text-align: center;
+  cursor: pointer;
 }
 /*=============
   Footer styles 
