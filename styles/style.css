@@ -181,7 +181,7 @@ a {
 }
 .blogs {
   width: 100%;
-  border: 1px solid var(var(--clr-border-1));
+  border: 1px solid var(--clr-border-1);
   border-radius: 10px;
 }
 .blog-img img {
@@ -425,7 +425,7 @@ Company Links
     height: 100%;
     margin: 0;
   }
-  .card-btn-btn {
+  .card-btn {
     width: 60%;
     border: 1px solid #b9b9b9;
   }
